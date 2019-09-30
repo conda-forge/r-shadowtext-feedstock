@@ -1,4 +1,4 @@
-{% set version = "0.0.5" %}
+{% set version = '0.0.6' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shadowtext_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shadowtext/shadowtext_{{ version }}.tar.gz
-  sha256: 5383d5ab3a420c5212162f1697b622aaeb8e2b19aa915e7dfce2ebe5aeb0d3c2
+  sha256: f743a5642e9f20fd3cf6e8414f84963b1fe1739ffb90e4b44733d9947ae3a9b3
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,9 +26,11 @@ requirements:
   host:
     - r-base
     - r-ggplot2
+    - r-scales
   run:
     - r-base
     - r-ggplot2
+    - r-scales
 
 test:
   commands:
@@ -49,11 +51,11 @@ extra:
 
 # Package: shadowtext
 # Title: Shadow Text Grob and Layer
-# Version: 0.0.4
+# Version: 0.0.6
 # Authors@R: person("Guangchuang", "Yu", email = "guangchuangyu@gmail.com", role = c("aut", "cre"))
 # Description: Implement shadowtextGrob() for 'grid' and geom_shadowtext() layer for 'ggplot2'. These functions create/draw text grob with background shadow.
 # Depends: R (>= 3.4.0)
-# Imports: ggplot2, grid
+# Imports: ggplot2, grid, scales
 # Suggests: knitr, prettydoc
 # VignetteBuilder: knitr
 # License: Artistic-2.0
@@ -63,8 +65,8 @@ extra:
 # BugReports: https://github.com/GuangchuangYu/shadowtext/issues
 # RoxygenNote: 6.1.1
 # NeedsCompilation: no
-# Packaged: 2018-12-07 05:31:28 UTC; YGC
+# Packaged: 2019-09-09 04:50:19 UTC; ygc
 # Author: Guangchuang Yu [aut, cre]
 # Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2018-12-07 06:30:02 UTC
+# Date/Publication: 2019-09-09 05:10:02 UTC
