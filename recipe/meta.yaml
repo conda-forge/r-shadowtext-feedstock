@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shadowtext_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shadowtext/shadowtext_{{ version }}.tar.gz
-  sha256: eb06581d7ed06c963eee47548932688fd48eba70b3ebd2a7b41a6501d6e00006
+  sha256: 253c4e737dbb302aa0729e5074e84cbfde2a73bfd7a0fd2c74b557cb728bae7d
 
 build:
   merge_build_host: true  # [win]
