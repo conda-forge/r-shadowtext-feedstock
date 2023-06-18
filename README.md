@@ -1,11 +1,11 @@
-About r-shadowtext
-==================
+About r-shadowtext-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shadowtext-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/GuangchuangYu/shadowtext/
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shadowtext-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implement shadowtextGrob() for 'grid' and geom_shadowtext() layer for 'ggplot2'. These functions create/draw text grob with background shadow.
 
