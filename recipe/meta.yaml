@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shadowtext_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shadowtext/shadowtext_{{ version }}.tar.gz
-  sha256: 87d0bea90e0090dd40f7cd8c380d185a9d4112a32a729d31859eaeca0cd46ee8
+  sha256: b80a9b4ac064a0045de0720a33aaadd964b1ad48110dee647d79628cea8d723d
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
