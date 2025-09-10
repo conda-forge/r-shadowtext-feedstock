@@ -25,12 +25,18 @@ requirements:
   host:
     - r-base
     - r-s7
+    - r-ggiraph
     - r-ggplot2
+    - r-purrr
+    - r-rlang
     - r-scales
   run:
     - r-base
     - r-s7
+    - r-ggiraph
     - r-ggplot2
+    - r-purrr
+    - r-rlang
     - r-scales
 
 test:
